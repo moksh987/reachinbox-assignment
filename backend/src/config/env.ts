@@ -15,7 +15,7 @@ export const env = {
   NODE_ENV: process.env.NODE_ENV ?? "development",
 
   DATABASE_URL: required("DATABASE_URL", "postgresql://reachinbox:reachinbox@localhost:5432/reachinbox"),
-
+  REDIS_URL: process.env.REDIS_URL ?? "",
   REDIS_HOST: process.env.REDIS_HOST ?? "localhost",
   REDIS_PORT: Number(process.env.REDIS_PORT ?? 6379),
 
